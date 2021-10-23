@@ -17,8 +17,8 @@
     --cor2: #D7EFFE;
     --cor3: #073042;
     --cor4: #4285F4;
-    --cor5: #000;
-    --cor6: #FFF;
+    --cor5: #141414;
+    --cor6: #FFFFFF;
 
     --fonte-padrao: Roboto, sans-serif;
     --fonte-destaque: Euclid-Bold, sans-serif;
@@ -79,6 +79,7 @@ header > nav > a {
     display: inline-block;
     margin: 0.25em;
     padding: 0.5em 0.75em;
+    border: 0.15em solid var(--cor0);
     border-radius: 20px;
     color: var(--cor6);
     background-color: var(--cor3);
@@ -86,8 +87,11 @@ header > nav > a {
 }
 
 header > nav > a:hover {
-    color: var(--cor1);
-    transition-duration: .3s;
+    color: var(--cor4);
+    background-color: var(--cor5);
+    border: 0.15em solid var(--cor0);
+    box-shadow: 2px 2px 5px #141414ad;
+    transition-duration: .5s;
 }
 
 main {
@@ -97,7 +101,7 @@ main {
 }
 
 main > article {
-    margin: 0 2em;
+    margin: 0 1.25em;
 }
 
 main > article > h1 {
@@ -174,22 +178,5 @@ div.boxVideo > iframe {
     left: 10%;
     width: 80%;
     height: 80%;
-}
-
-.ripple {
-    background-position: center;
-    transition: background 0.8s;
-}
-
-.ripple:hover {
-    background: var(--cor3) radial-gradient(circle, transparent 1%, var(--cor3) 1%) center/15000%;
-    color: var(--cor0);
-    transition-duration: .3s;
-}
-
-.ripple:active {
-    background-color: var(--cor4);
-    background-size: 100%;
-    transition: background 0s;
 }
 
