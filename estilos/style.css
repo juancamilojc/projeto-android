@@ -70,11 +70,10 @@ header > p {
 }
 
 header > nav {
-    margin: 1rem;
+    margin: 1rem auto;
     padding: 2rem 0;
     background-color: var(--cor0);
     font-family: var(--fonte-media);
-    text-align: left;
 }
 
 header > nav > a {
