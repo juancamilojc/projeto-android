@@ -37,7 +37,7 @@ html, body {
 }
 
 a {
-    color: var(--cor3);
+    color: var(--cor1);
     font-weight: bold;
     text-decoration: none;
 }
@@ -83,12 +83,13 @@ header > nav > a {
     color: var(--cor6);
     background-color: var(--cor3);
     font-weight: normal;
+    box-shadow: 0.15rem 0.25rem 0.45rem #14141440;
 }
 
 header > nav > a:hover {
     position:relative;
     bottom: 0.15rem;
-    box-shadow: 0.1rem 0.1rem 0.5rem #14141490;
+    box-shadow: 0.15rem 0.5rem 0.75rem #14141445;
 }
 
 main {
@@ -98,7 +99,7 @@ main {
 }
 
 main > article {
-    margin: 1rem;
+    margin: 5rem 1rem;
 }
 
 main > article > h1 {
@@ -126,28 +127,125 @@ main > article > p, main > article > aside > p {
     text-align: justify;
 }
 
+aside {
+    box-shadow: 0.25rem 0.25rem 0.5rem #14141410;
+}
+
 aside > ul {
-    margin: 1rem;
+    margin: auto;
     columns: 1;
+    list-style-type: none;
 }
 
 aside > ul > li {
+    position: relative;
     margin: 1rem 0.5rem;
     padding: 0.5rem 1rem;
     color: var(--cor2);
     background-color: var(--cor4);
     border-radius: 1rem;
-    list-style: none;
     text-align: center;
+    overflow: hidden;
 }
 
 aside > ul > li:hover {
     position:relative;
     bottom: 0.25rem;
-    box-shadow: 0.15rem 0.15rem 0.5rem #14141450;
+    color: var(--cor6);
+    text-shadow: 0.15rem 0.15rem 0.5rem #14141450;
+    box-shadow: 0.15rem 0.5rem 0.75rem #14141445;
+}
+
+aside > ul > li#cupcake:hover {
+    background: var(--cor4) url(../imagens/cupcake.png) no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+aside > ul > li#donut:hover {
+    background: var(--cor4) url(../imagens/donut.png) no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+aside > ul > li#eclair:hover {
+    background: var(--cor4) url(../imagens/eclair.png) no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+aside > ul > li#froyo:hover {
+    background: var(--cor4) url(../imagens/froyo.png) no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+aside > ul > li#ginger:hover {
+    background: var(--cor4) url(../imagens/gingerbread.png) no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+aside > ul > li#honey:hover {
+    background: var(--cor4) url(../imagens/honeycomb.png) no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+aside > ul > li#icecream:hover {
+    background: var(--cor4) url(../imagens/icecreamsandwich.png) no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+aside > ul > li#jelly:hover {
+    background: var(--cor4) url(../imagens/jellybeans.png) no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+aside > ul > li#kitkat:hover {
+    background: var(--cor4) url(../imagens/kitkat.png) no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+aside > ul > li#lolipop:hover {
+    background: var(--cor4) url(../imagens/lolipop.png) no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+aside > ul > li#marshm:hover {
+    background: var(--cor4) url(../imagens/marshmallow.png) no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+aside > ul > li#nougat:hover {
+    background: var(--cor4) url(../imagens/nougat.png) no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+aside > ul > li#oreo:hover {
+    background: var(--cor4) url(../imagens/oreo.png) no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+aside > ul > li#pie:hover {
+    background: var(--cor4) url(../imagens/pie.png) no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+aside > ul > li strong {
+    font-size: 1.5rem;
 }
 
 aside > ul > li > abbr {
+    padding: 2rem 0 0;
     text-decoration: none;
 }
 
@@ -170,19 +268,21 @@ footer > p {
 
 img {
     width: 100%;
+    border-radius: 1rem;
 }
 
 #lowRes {
     margin: auto;
-    max-width: 300px;
+    max-width: 200px;
 }
 
 div.boxVideo {
     position: relative;
     margin: 1rem auto;
     padding: 1rem 1rem 50% 1rem;
-    background-color: var(--cor4);
-    border-radius: 0.5rem;
+    background-color: var(--cor0);
+    border-radius: 1rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem #14141410;
 }
 
 div.boxVideo > iframe {
@@ -191,5 +291,5 @@ div.boxVideo > iframe {
     left: 10%;
     width: 80%;
     height: 80%;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
