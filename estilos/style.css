@@ -29,7 +29,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 html, body {
@@ -40,6 +40,11 @@ a {
     color: var(--cor1);
     font-weight: bold;
     text-decoration: none;
+}
+
+a span {
+    position: relative;
+    top: 0.35rem;
 }
 
 a:hover {
@@ -77,8 +82,8 @@ header > nav {
 }
 
 header > nav > a {
-    margin: 0.25rem;
-    padding: 0.5rem 1rem;
+    margin: 0.45rem;
+    padding: 0.65rem 1rem;
     border-radius: 2rem;
     color: var(--cor6);
     background-color: var(--cor3);
@@ -90,6 +95,10 @@ header > nav > a:hover {
     position:relative;
     bottom: 0.15rem;
     box-shadow: 0.15rem 0.5rem 0.75rem #14141445;
+}
+
+header > nav > a > span {
+    margin-right: 0.5rem;
 }
 
 main {
@@ -132,15 +141,15 @@ aside {
 }
 
 aside > ul {
-    margin: auto;
-    columns: 1;
+    margin: 2rem auto;
+    columns: auto 1;
     list-style-type: none;
 }
 
 aside > ul > li {
     position: relative;
-    margin: 1rem 0.5rem;
-    padding: 0.5rem 1rem;
+    margin: 0 0.5rem 1rem ;
+    padding: 1rem 0.5rem;
     color: var(--cor2);
     background-color: var(--cor4);
     border-radius: 1rem;
@@ -152,8 +161,9 @@ aside > ul > li:hover {
     position:relative;
     bottom: 0.25rem;
     color: var(--cor6);
-    text-shadow: 0.15rem 0.15rem 0.5rem #14141450;
+    text-shadow: 0.15rem 0.25rem 0.5rem #14141470;
     box-shadow: 0.15rem 0.5rem 0.75rem #14141445;
+    transition: 0.25s ease;
 }
 
 aside > ul > li#cupcake:hover {
@@ -246,6 +256,7 @@ aside > ul > li strong {
 
 aside > ul > li > abbr {
     padding: 2rem 0 0;
+    font-size: 1.25rem;
     text-decoration: none;
 }
 
@@ -268,6 +279,7 @@ footer > p {
 
 img {
     width: 100%;
+    margin: 1rem 0;
     border-radius: 1rem;
 }
 
@@ -278,11 +290,11 @@ img {
 
 div.boxVideo {
     position: relative;
-    margin: 1rem auto;
-    padding: 1rem 1rem 50% 1rem;
+    margin: 2rem auto;
+    padding: 25% 50%;
     background-color: var(--cor0);
     border-radius: 1rem;
-    box-shadow: 0.25rem 0.25rem 0.5rem #14141410;
+    box-shadow: 0.25rem 0.25rem 1rem #14141420;
 }
 
 div.boxVideo > iframe {
