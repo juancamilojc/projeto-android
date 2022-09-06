@@ -97,10 +97,6 @@ header > nav > a:hover {
     box-shadow: 0.15rem 0.5rem 0.75rem #14141445;
 }
 
-header > nav > a > span {
-    margin-right: 0.5rem;
-}
-
 main {
     height: 85%;
     width: 90%;
